@@ -4,6 +4,7 @@ Uncle Bob (Clean Architecture creator) told that he had the idea of Clean Archit
 Problem is: Many Clean Architecture implementations out there aren't framework/lib agnostic, it's not clear that they are using this pattern. 
 Sometimes the file structure indeed suggest a Clean Architecture implementation but with severe flaws like not depending on interfaces.
 Another problem that i see is that the http server is considered the only entrypoint to the business logic, with the http server on the project root.
-The idea is to implement 3 entrypoints to domain: Http server, Grpc and async workers with kafka or rabbitmq.
+The idea is that the delivery mechanism can be a console application, a http server, a desktop application, etc...
+The idea is to implement 3 entrypoints: Http server, Grpc and async workers with kafka or rabbitmq.
 
 I apologize in advance for any errors, leave your corrections, suggestions and improvements.
