@@ -1,7 +1,8 @@
 # Simple implementation Clean Architecture in Golang.
 
 Uncle Bob (Clean Architecture creator) told that he had the idea of Clean Architecture when he saw a Ruby on Rails project and in seconds he knew that it was a Rails project.
-Problem is: Many Clean Architecture implementations out there are framework/lib agnostic, sometimes not even depend on interfaces.
+Problem is: Many Clean Architecture implementations out there aren't framework/lib agnostic, it's not clear that they are using this pattern. 
+Sometimes the file structure indeed suggest a Clean Architecture implementation but with severe flaws like not depending on interfaces.
 Another problem that i see is that the http server is considered the only entrypoint to the business logic, with the http server on the project root.
 The idea is to implement 3 entrypoints to domain: Http server, Grpc and async workers with kafka or rabbitmq.
 
